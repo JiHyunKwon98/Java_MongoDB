@@ -26,6 +26,7 @@ public class insertingDocument {
 			.append("likes", 150)
 			.append("url", "http://www.tutorialspoint.com/mongodb/")
 			.append("by", "tutorials point");
+		
 		mycol.insertOne(mydoc);
 		System.out.println("Document inserted successfully");
 
