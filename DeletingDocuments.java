@@ -19,6 +19,7 @@ public class DeletingDocuments {
 		 MongoDatabase mydb = myclient.getDatabase("sdb");
 		 // Retrieving a collection
 		 MongoCollection<Document> mycol = mydb.getCollection("sampleCol");
+		 
 		 //Deleting a document
 		 mycol.deleteOne(Filters.eq("id",1)); //deleteMany() ¸Þ¼Òµå 
 		 System.out.println("Document deleted successfully...");
